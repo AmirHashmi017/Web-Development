@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        div,span{
+            color:red;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:aquamarine;background-color:red; text-align: center;">My Form Practice</h1>
+    <form method="Post">
+        <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Name" required>
+    </div>
+    <div>
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" placeholder="*******" autofocus>
+    </div>
+    <div>
+        <label for="Date">Date Of Birth</label>
+        <input type="date" id="Date" name="Date">
+    </div>
+    <div>
+        <label for="Time">Timings</label>
+        <input type="time" id="Time" name="Time">
+    </div>
+    <div>
+        
+        
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+       
+  
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+    </div>
+    <div>
+        <input type="checkbox" id="Is Brilliant" name="Check" value="Yes">
+        <label for="Is Brilliant">Is Brilliant</label>
+    </div>
+<span>
+    <label for="Special">Enter Your Comment: </label>
+    <textarea id="Special" name="Special"   rows="10" cols="72">Enter something about you.        
+    </textarea>
+</span>
+<div>
+    <select name="Fruits">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="mango">Mango</option>
+    </select>
+</div>
+<div>
+    <button type="submit">Submit</button>
+</div>
+    </form>
+    
+</body>
+</html>

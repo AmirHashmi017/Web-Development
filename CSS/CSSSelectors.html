@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*Element Selectors*/
+        div
+        {
+            background-color: rgb(105, 164, 144);
+        }
+        /* class selectors */
+        .red
+        {
+            color:red;
+        }
+        /* ID Selectors */
+        #green
+        {
+            color:green;
+        }
+        /* Child Selectors */
+        div > p{
+            text-align:center;
+        }
+        /* Descendant selector */
+        div p
+        {
+            color:tomato;
+        }
+        /* universal selector */
+        *
+        {
+            font-style: italic;
+        }
+        /* pseudo selectors */
+        a:visited
+        {
+            color:yellow
+        }
+        a:link{
+            color:green
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: green;
+        }
+        h1:first-child
+        {
+            text-align:center
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:white;background-color: green;">CSS SELECTORS</h1>
+    <div id="green" class="red">
+        <h2>Checking Simple DIV</h2>
+        <p>I have checked now.</p>
+        <code>
+            <p>Can it also implement here.</p>
+        </code>
+    </div>
+    <div class="red">
+        Let's Enjoy the life.
+    </div>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook.com">FaceBook</a>
+</body>
+</html>

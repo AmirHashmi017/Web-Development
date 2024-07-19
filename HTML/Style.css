@@ -1,0 +1,19 @@
+body{
+    background-color:rgb(154, 166, 157);
+    color:rgb(115, 3, 115);
+}
+.red
+{
+    color:red
+}
+.brown
+{
+    background-color:brown
+}
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    gap: 5em; /* Adjust the spacing between items */
+}
