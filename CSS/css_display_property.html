@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        .box {
+            /* View CSS detailed content link */
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/display */
+            /* display:inline-block;  */
+            border: 10px solid blue;
+            padding: 45px;
+            margin: 45px;
+            /* visibility:hidden; */
+            display: flex;
+            justify-content: center;
+            /* display:grid; */
+        }
+
+        span {
+            display: block;
+            border: 10px solid blue;
+            padding: 45px;
+            margin: 45px;
+        }
+
+        .special {
+            display: inline-block;
+            border: 10px solid blue;
+            padding: 45px;
+            margin: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <div class="special">
+        I am also a box
+    </div>
+    <h1>WOW</h1>
+    <span>
+        Let's move
+    </span>
+</body>
+
+</html>

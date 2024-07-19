@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selectors</title>
     <style>
         /*Element Selectors*/
-        div
-        {
+        div {
             background-color: rgb(105, 164, 144);
         }
+
         /* class selectors */
-        .red
-        {
-            color:red;
+        .red {
+            color: red;
         }
+
         /* ID Selectors */
-        #green
-        {
-            color:green;
+        #green {
+            color: green;
         }
+
         /* Child Selectors */
-        div > p{
-            text-align:center;
+        div>p {
+            text-align: center;
         }
+
         /* Descendant selector */
-        div p
-        {
-            color:tomato;
+        div p {
+            color: tomato;
         }
+
         /* universal selector */
-        *
-        {
+        * {
             font-style: italic;
         }
+
         /* pseudo selectors */
-        a:visited
-        {
-            color:yellow
+        a:visited {
+            color: yellow
         }
-        a:link{
-            color:green
+
+        a:link {
+            color: green
         }
-        a:active{
+
+        a:active {
             background-color: red;
         }
-        a:hover{
+
+        a:hover {
             background-color: green;
         }
-        h1:first-child
-        {
-            text-align:center
+
+        h1:first-child {
+            text-align: center
         }
     </style>
 </head>
+
 <body>
     <h1 style="color:white;background-color: green;">CSS SELECTORS</h1>
     <div id="green" class="red">
@@ -69,4 +74,5 @@
     <a href="https://www.google.com">Google</a>
     <a href="https://www.facebook.com">FaceBook</a>
 </body>
+
 </html>
