@@ -1,0 +1,30 @@
+:root{
+    --color:rgb(21, 255, 0);
+    --secolor:rgb(209, 230, 173);
+    --defpad:20px;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.nav
+{
+    display: flex;
+    background-color:var(--color);
+    justify-content: center;
+}
+ul li:first-child
+{
+    --color:rgb(64, 0, 255);
+    background-color: var(--color,red);
+    border:10px solid var(--secolor);
+}
+ul li{
+    list-style: none;
+    padding:var(--defpad);
+}
+.container
+{
+    background-color:var(--secolor);
+}
