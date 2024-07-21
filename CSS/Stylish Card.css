@@ -1,0 +1,61 @@
+body
+{
+    background-color: whitesmoke;
+}
+.card
+{
+    display:inline-block;
+    justify-content: center;
+    border:2px solid white;
+    background-color: white;
+    border-radius: 12px;
+    padding:10px;
+    margin:30px;
+}
+.image{
+    border-radius: 12px;
+}
+.text
+{
+    display: flex;
+    margin-left: 15px;
+}
+.text p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:grey;
+    border:2px solid lightgrey;
+    padding: 5px;
+    border-radius: 25px;
+}
+.text p:last-child{
+position:relative;
+left:15px;
+}
+.card h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    top:-15px;
+    left:10px;
+}
+.card>p{
+    position: relative;
+    left:8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width:300px;
+    color:grey;
+    top:-15px;
+}
+.button p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:blue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-inline: 15px;
+    display:inline-block;
+    border:2px solid rgb(199, 219, 236);
+    background-color: rgb(199, 219, 236);
+    border-radius: 25px;
+    position:relative;
+    left:85px;
+    top:-25px;
+}
