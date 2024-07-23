@@ -1,0 +1,84 @@
+body{
+    background-color:rgb(27, 38, 49);
+    margin: 0;
+    padding: 0;
+}
+.navbar
+{
+    padding:5px;
+    display: block;
+    position:fixed; 
+    width:100%;
+    top:-10;
+    left:0;
+    height: 70px;
+    text-align: center;
+    background-color: rgb(99, 57, 116) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    z-index: 1000;
+}
+.card
+{
+    position: relative;
+    top:120px;
+    left:350px;
+    width:800px;
+    height: 550px;
+    background-color: purple;
+    border-radius: 10px;
+    background-color: rgb(175, 122, 197) ;
+}
+.pic
+{
+    position: relative;
+    top:10px;
+    left:340px;
+    border-radius: 100px;
+}
+.name
+{
+    position: relative;
+    top:-15px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+.description
+{
+    position: relative;
+    top:-35px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color:white;
+}
+.innercard
+{
+    position: relative;
+    top:-20px;
+    left:50px;
+    width:700px;
+    height: 250px;
+    background-color: purple;
+    border-radius: 10px;
+    background-color: rgb(99, 57, 116) ;
+}
+.innercard p
+{
+    position: relative;
+    top:30px;
+    padding-top: 10px;
+    color:white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer p{
+    position:relative;
+    top:180px;
+    border:2px solid rgb(99, 57, 116) ;;
+    text-align: center;
+    background-color: rgb(99, 57, 116) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+}
