@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS FlexBox</title>
+    <style>
+        .container
+        {
+border:2px solid red;
+display: flex;
+justify-content: center;
+/* justify-content: flex-start;
+justify-content: flex-end;
+justify-content: space-around;
+justify-content: space-between; */
+align-items: center;
+/* align-items: baseline;
+align-items: flex-end;
+align-items: flex-start; */
+flex-direction: column;
+flex-direction:column-reverse;
+flex-direction: row;
+flex-direction: row-reverse;
+height: 80vh;
+        }
+        .item
+        {
+            height: 92px;
+            width:92px;
+            border: 2px solid black;
+            margin:4px;
+            background-color: blueviolet;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item"></div>
+    </div>
 </body>
 </html>
