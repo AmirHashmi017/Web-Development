@@ -1,0 +1,27 @@
+.container
+{
+    width: 100vw;
+    height: 80vh;
+    border:2px solid purple;
+    padding:30px;
+}
+.box
+{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border: 2px solid black;
+    /* transform: rotate(40deg);  */
+    /* transform: rotate(0.25turn); */
+    /* transform: scale(1.6); */
+    /* transform: scaleX(1.6); */
+    /* transform: scale3d(1.6); */
+    /*By default skew is X*/
+    /* transform: skew(34deg); */
+    /* transform: skewX(34deg);
+    transform: skewY(43deg); */
+    /* transform: translateX(100px);
+    transform: translateY(120px); */
+    /*Now apply transform properties consecutively*/
+    transform:scale(1.6) rotate(40deg) skew(40deg) translateX(100%) translateY(100%);
+}
