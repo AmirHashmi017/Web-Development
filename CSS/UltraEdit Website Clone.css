@@ -62,6 +62,7 @@ h3{
 }
 .button
 {
+    margin-top:30px ;
     border:2px solid blue;
     background-color: blue;
     width:300px;
@@ -72,7 +73,39 @@ h3{
     align-items: center;
 }
 .button a{
-    color: aliceblue;
-    text-decoration: white;
+    color: white;
+    text-decoration: none;
     font-weight: 500;
+}
+.middle
+{
+    display:flex;
+    margin-left: 300px;
+    margin-top: 40px;
+}
+.text{
+    line-height: 6.9px;
+}
+.middle h3{
+position: relative;
+top:-18px;
+left:15px;
+}
+.middle p{
+    position: relative;
+top:0px;
+left:20px;
+}
+.card1
+{
+    background-color: whitesmoke;
+    width:400px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card1 p{
+    font-size: xx-small;
 }
