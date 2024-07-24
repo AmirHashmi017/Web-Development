@@ -103,9 +103,39 @@ left:20px;
     height:300px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
+    border-radius: 10px;
 }
 .card1 p{
-    font-size: xx-small;
+    font-size:x-small;
+}
+.button2
+{
+    border:2px solid green;
+    background-color:green;
+    width:150px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+a{
+    
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.lasttext
+{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+strong{
+    font-size: 16px;
 }
