@@ -1,12 +1,11 @@
-.container
-{
+.container {
     width: 100vw;
     height: 80vh;
-    border:2px solid purple;
-    padding:30px;
+    border: 2px solid purple;
+    padding: 30px;
 }
-.box
-{
+
+.box {
     height: 50px;
     width: 50px;
     background-color: aqua;
@@ -23,5 +22,5 @@
     /* transform: translateX(100px);
     transform: translateY(120px); */
     /*Now apply transform properties consecutively*/
-    transform:scale(1.6) rotate(40deg) skew(40deg) translateX(100%) translateY(100%);
+    transform: scale(1.6) rotate(40deg) skew(40deg) translateX(100%) translateY(100%);
 }
