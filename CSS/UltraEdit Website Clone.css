@@ -20,7 +20,8 @@ ul li {
     list-style: none;
     padding-right: 30px;
 }
-ul li:hover{
+
+ul li:hover {
     cursor: pointer;
     font-weight: bolder;
 }
@@ -36,93 +37,100 @@ ul li:hover{
 .text p {
     font-size: xx-small;
 }
-.line1
-{
-    display:flex;
+
+.line1 {
+    display: flex;
 }
-.line1 h1
-{
+
+.line1 h1 {
     font-size: 40px;
     font-weight: 400;
 }
-.bodyflex
-{
+
+.bodyflex {
     margin-top: 40px;
-    width:100vw;
-    display:flex;
+    width: 100vw;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
-h3{
+
+h3 {
     font-size: 24px;
     font-weight: 400;
     text-align: center;
 }
-.image
-{
+
+.image {
     position: relative;
-    left:25px;
-    top:30px;
+    left: 25px;
+    top: 30px;
 }
-.button
-{
-    margin-top:30px ;
-    border:2px solid blue;
+
+.button {
+    margin-top: 30px;
+    border: 2px solid blue;
     background-color: blue;
-    width:300px;
+    width: 300px;
     height: 60px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.button:active{
-    transform:scale(1.1);
+
+.button:active {
+    transform: scale(1.1);
     transition: 2ms;
 }
-.button a{
+
+.button a {
     color: white;
     text-decoration: none;
     font-weight: 500;
 }
-.middle
-{
-    display:flex;
+
+.middle {
+    display: flex;
     margin-left: 300px;
     margin-top: 40px;
 }
-.text{
+
+.text {
     line-height: 6.9px;
 }
-.middle h3{
-position: relative;
-top:-18px;
-left:15px;
-}
-.middle p{
+
+.middle h3 {
     position: relative;
-top:0px;
-left:20px;
+    top: -18px;
+    left: 15px;
 }
-.card1
-{
+
+.middle p {
+    position: relative;
+    top: 0px;
+    left: 20px;
+}
+
+.card1 {
     background-color: whitesmoke;
-    width:300px;
-    height:250px;
+    width: 300px;
+    height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
 }
-.card1 p{
-    font-size:xx-small;
+
+.card1 p {
+    font-size: xx-small;
 }
-.button2
-{
-    border:2px solid green;
-    background-color:green;
-    width:150px;
+
+.button2 {
+    border: 2px solid green;
+    background-color: green;
+    width: 150px;
     height: 30px;
     border-radius: 10px;
     display: flex;
@@ -130,14 +138,15 @@ left:20px;
     align-items: center;
     margin-top: 30px;
 }
-a{
-    
+
+a {
+
     color: white;
     text-decoration: none;
     font-weight: 500;
 }
-.lasttext
-{
+
+.lasttext {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -145,45 +154,46 @@ a{
     justify-content: center;
     line-height: 6.9px;
 }
- .container strong{
+
+.container strong {
     font-size: 16px;
     font-weight: bolder;
 }
-.container
-{
-    width:60vw;
-    margin:auto;
-    display:grid;
+
+.container {
+    width: 60vw;
+    margin: auto;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap:30px ;
+    column-gap: 30px;
     row-gap: 30px;
 }
-@media only screen and (max-width:555px){
-    .container
-    {
-        display:flex;
+
+@media only screen and (max-width:555px) {
+    .container {
+        display: flex;
         text-align: center;
         flex-direction: column;
     }
 }
-.box1
-{
+
+.box1 {
     grid-column: 1;
 }
-.box2
-{
+
+.box2 {
     grid-column: 2;
 }
-.box3
-{
+
+.box3 {
     grid-column: 3;
 }
 
-footer p{
-        margin-top: 30px;
-        border:2px solid green ;
-        text-align: center;
-        background-color:green ;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color:white;
-    }
+footer p {
+    margin-top: 30px;
+    border: 2px solid green;
+    text-align: center;
+    background-color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
