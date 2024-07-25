@@ -1,0 +1,23 @@
+.container {
+    width: 50vw;
+    height: 40vh;
+    background-color: antiquewhite;
+}
+
+.box {
+    width: 5vw;
+    height: 4vh;
+    background-color: aqua;
+    /* transition-property: transform,background-color;*/
+    /* OR transition-property: all; */
+    /* transition-duration: 3s;
+    transition-timing-function:ease-in-out ;
+    transition-delay: 1s; */
+    transition: all 3s ease-in-out 1s;
+
+}
+
+.tr {
+    transform: translateX(10vw) translateY(10vh);
+    background-color: blue;
+}
