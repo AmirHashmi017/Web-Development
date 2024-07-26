@@ -1,0 +1,42 @@
+.container
+{
+    position: relative;
+    background-color: red;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.ball
+{
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    background-color: blue;
+    width:10vw;
+    height:20vh;
+    border-radius: 100%;
+    animation: animateX 3s linear infinite alternate
+    , animateY 1s ease-out infinite alternate-reverse;
+}
+    @keyframes animateX
+{
+    from{
+        left:0;
+    }
+    to 
+    {
+        left:100%;
+    }
+}
+@keyframes animateY
+{
+    from{
+        top:0;
+    }
+    to 
+    {
+        top:100%;
+    }
+}
