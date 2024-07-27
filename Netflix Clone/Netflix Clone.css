@@ -27,6 +27,7 @@ body {
     position: absolute;
     z-index: -1;
     background-image: url('Assets/Background.jpg');
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(40%);
@@ -319,9 +320,6 @@ img {
 .page6 h1{
     text-align: center;
 }
-.page7{
-    
-}
 .page7
 {
     border-top: 8px solid rgb(45, 45, 45);
@@ -370,23 +368,324 @@ img {
     font-size: 18px;
 }
 @media screen and (max-width: 1300px) {
-    .page1{
+    .page1::before{
+        flex-direction: column;
+        height: 70vh;
+    }
+    .navbar {
+        column-gap: 20px;
+        justify-content: center;
+    }
+    img {
+        width: 6.25rem;
+        height: 2.5rem;
+    }
+    .buttons {
+        column-gap: 10px;
+    }
+    .button1 {
+        width: 70px;
+        
+    }
+    
+    .button2 {
+        width: 60px;
+    }
+    .fronttext {
+        padding-top: 80px;
+        align-content: center;
+        justify-content: flex-start;
+        row-gap: 10px;
+    }
+    
+    .fronttext :nth-child(1) {
+        font-size: 14px;
+    }
+    
+    .fronttext:nth-child(2) {
+        color: var(--color);
+        font-weight: 400;
+        font-size: 10px;
+    }
+    
+    .fronttext:nth-child(3) {
+        color: var(--color);
+        font-weight: 400;
+        font-size: 5px;
+    }
+    /* .page2{
+        flex-direction: column;
+    } */
+    .fronttextinput {
         flex-direction: column;
     }
-    .page2{
-        flex-direction: column;
+    
+    .specialbutton {
+        font-size: 12px;
+        width: 130px;
+        height: 30px;
     }
-    .page3{
-        flex-direction: column;
+    
+    
+    #inputfield {
+        width: 200px;
+        font-size: 17px;
+        height: 25px;
     }
-    .page4{
+    
+    #inputfield::placeholder {
+        color: grey;
+        font-size: 14px;
+    } 
+    .page2 {
+        max-width: 70vw;
+        position: relative;
+        left:100px;
+        margin-top: -200px;
+        padding-left: 10px;
+        display: flex;
         flex-direction: column;
+        row-gap: 90px;
+        justify-content:flex-start;
+        height: 60vh;
+    }
+    
+    .Page2Text h1 {
+        font-size: 28px;
+        line-height: 50px;
+    }
+    
+    .simple p {
+        font-size: 10px;
+        line-height: 30px;
+    }
+    
+    .secImg {
+        position: relative;
+    }
+    
+    .secImg img {
+        position: relative;
+        top: -100px;
+        width: 355px;
+        height: 500px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .secImg video {
+        position: relative;
+        top: -500px;
+        left: 70px; 
+        width: 215px; 
+        height: 298px; 
+        object-fit: cover;
+    }
+    .page3
+{
+    padding-top: 50px;
+    margin-top: 220px;
+    border-top: 8px solid rgb(45, 45, 45);
+    border-bottom: 8px solid rgb(45, 45, 45);
+    width: 98vw;
+    height: 70vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-left: 190px;
+    column-gap: 100px;
+    align-items: center;
+}
+.kidsimage
+{
+    position:relative;
+    top:-10px;
+    width:274px;
+    height: 226px;
+}
+.page4
+{
+    padding-top: 30px;
+    border-bottom: 8px solid rgb(45, 45, 45);
+    width: 98vw;
+    height: 70vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    column-gap: 100px;
+}
+.mobileimage
+{
+    position:relative;
+    top:-50px;
+    width:474px;
+    height: 356px;
+}
+.Page2Text h2 {
+    color: var(--color);
+    font-weight: bolder;
+    font-size: 28px;
+    line-height: 50px;
+}
+.page5
+{
+    padding-top: 30px;
+    border-bottom: 8px solid rgb(45, 45, 45);
+    width: 98vw;
+    height: 80vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+.secvideo img
+{
+    position: relative;
+    top: -100px;
+    width: 355px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+
+}
+.secvideo video{
+    position: relative;
+    top: -570px;
+    left: 70px; 
+    width: 255px; 
+    height: 598px;
+}
+.Page2Text h3 {
+    color: var(--color);
+    font-weight: bolder;
+    font-size: 28px;
+    line-height: 50px;
+}
+.page6
+{
+    position:relative;
+    top:60px;
+    max-width: 60vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    column-gap: 30px;
+}
+.box
+{
+    width: 80vw;
+    height:15vh;
+    background-color: #2d2d2d;
+    margin-top: 10px;
+}
+.box:hover{
+    background-color: #414141;
+}
+.box p{
+    color: white;
+    padding: 34px;
+    font-size: 24px;
+}
+.page6 h1{
+    text-align: center;
+}
+.page7
+{
+    border-top: 8px solid rgb(45, 45, 45);
+    position: relative;
+    top:200px;
+    padding-top: 100px;
+}
+.page7grid
+{
+    width: 60vw;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px 50px;
+    color: white;
+}
+}
+
+/* @media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
     }
 
-    .page5{
-        flex-direction: column;
+    .first {
+        flex-wrap: wrap;
     }
-    .page6{
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
     }
 }
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+} */
