@@ -162,7 +162,7 @@ img {
     font-size: 20px;
 }
 
-.inputfield:focus{
+#inputfield:focus{
     outline: none; 
     border: 3px solid white;
     box-shadow: none;
