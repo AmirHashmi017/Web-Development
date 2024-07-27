@@ -356,6 +356,18 @@ img {
     text-decoration: underline;
     cursor: pointer;
 }
+.content:hover{
+    font-size: 18px;
+}
+.content1:hover{
+    font-size: 18px;
+}
+.content2:hover{
+    font-size: 18px;
+}
+.content3:hover{
+    font-size: 18px;
+}
 @media screen and (max-width: 1300px) {
     .page1{
         flex-direction: column;
