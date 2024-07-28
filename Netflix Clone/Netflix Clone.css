@@ -440,13 +440,14 @@ img {
     .page2 {
         max-width: 70vw;
         position: relative;
-        left:100px;
+        left:10px;
         margin-top: -200px;
-        padding-left: 10px;
+        padding-left: 0px;
         display: flex;
         flex-direction: column;
         row-gap: 90px;
         justify-content:flex-start;
+        align-items: flex-start;
         height: 60vh;
     }
     
@@ -483,7 +484,7 @@ img {
     }
     .page3
 {
-    padding-top: 50px;
+    padding-top: 30px;
     margin-top: 220px;
     border-top: 8px solid rgb(45, 45, 45);
     border-bottom: 8px solid rgb(45, 45, 45);
@@ -492,9 +493,9 @@ img {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    padding-left: 190px;
+    padding-left: 80px;
     column-gap: 100px;
-    align-items: center;
+    align-items: flex-start;
 }
 .kidsimage
 {
@@ -578,7 +579,7 @@ img {
 }
 .box
 {
-    width: 80vw;
+    width: 70vw;
     height:15vh;
     background-color: #2d2d2d;
     margin-top: 10px;
@@ -589,7 +590,7 @@ img {
 .box p{
     color: white;
     padding: 34px;
-    font-size: 24px;
+    font-size: 14px;
 }
 .page6 h1{
     text-align: center;
@@ -610,82 +611,16 @@ img {
     grid-template-rows: 50px 50px 50px 50px;
     color: white;
 }
+.content:hover{
+    font-size: 16px;
 }
-
-/* @media screen and (max-width: 1300px) {
-
-    nav{
-        max-width: 90vw;
-    }
-
-    .first {
-        flex-wrap: wrap;
-    }
-
-    .secImg img {
-        width: 305px;
-    }
-
-    .secImg video {
-        width: 305px;
-    }
-
-    .hero> :nth-child(1) {
-        font-size: 32px;
-    }
-
-    .hero> :nth-child(2) {
-        font-size: 18px;
-    }
-
-    .hero> :nth-child(3) {
-        font-size: 18px;
-    }
-
-    .hero-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-    }
-
-    .faq h2 {
-        text-align: center;
-        font-size: 32px;
-    }
-
-    footer {
-        max-width: 90vw;
-        padding: 75px 0;
-    }
-
-    .footer-item{
-        align-items: center;
-    }
- 
-
+.content1:hover{
+    font-size: 16px;
 }
-
-
-
-@media screen and (max-width: 1300px) {
-
-    .footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
-    }
+.content2:hover{
+    font-size: 16px;
 }
-
-
-.footer a {
-    font-size: 14px;
-    color: white;
+.content3:hover{
+    font-size: 16px;
 }
-
-.footer-item {
-    display: flex;
-    flex-direction: column;
-    gap: 23px;
-} */
+}
