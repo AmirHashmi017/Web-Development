@@ -453,11 +453,11 @@ row-gap: 10vh;
 {
     margin-top: 20vh;
     width: 95vw;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 10vh;
+    row-gap: 3vh;
 }
 .contactcontainer{
     width:57vw;
@@ -468,8 +468,13 @@ border: 1px solid var(--tj-theme-secondary);
 box-sizing: border-box;
 flex-direction: column;
 row-gap: 5vh;
+margin-bottom: 5vh;
 border-radius: 15px;
     padding: 30px;
+}
+.contactcontainer:hover
+{
+    border:2px solid var(--tj-theme-primary)
 }
 .contactcontainer a
 {
@@ -490,4 +495,11 @@ border-radius: 15px;
 .contactcontainer img{
     position: relative;
     top:-10px;
+}
+.logos
+{
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        column-gap: 30px;
 }
