@@ -54,6 +54,9 @@
     --tj-fz-h6: 18px;
     --tj-fz-sub-title: 36px;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .home {
     width: 95vw;
@@ -313,6 +316,7 @@ h2 {
     border-bottom: 1px solid var(--tj-theme-primary);
     /* background: var(--tj-theme-accent-2); */
     z-index: 10;
+    margin-bottom: 0; /* Adjusted to remove extra spacing */
     height: 15vh;
     justify-content: center;
     align-items: center;
@@ -359,8 +363,9 @@ h2 {
     color: var(--tj-white);
 }
 .Skills {
+    margin-top: 10vh;
     width: 95vw;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .skillscontainer {
     width: 80vw;
@@ -392,4 +397,97 @@ h2 {
 display:grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 column-gap: 2vw;
+}
+.Certifications
+{
+    margin-top: 20vh;
+    width: 95vw;
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10vh;
+}
+.certificationcontainer{
+    width:77vw;
+    margin:auto;
+display:grid;
+grid-template-columns: 1fr 1fr;
+column-gap: 2vw;
+row-gap: 10vh;
+}
+.certificate {
+    width: 32vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--tj-theme-accent-2);
+    border: 1px solid var(--tj-theme-secondary);
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 30px;
+}
+.certificate:hover
+{
+    border:2px solid var(--tj-theme-primary)
+}
+.certificate img{
+    border:3px solid var(--tj-theme-primary);
+    border-radius: 10px;
+}
+.secondcertificate {
+    
+    font-size: 25px;
+    /* text-transform: uppercase; */
+    margin-bottom: 8px;
+    font-family: var(--tj-ff-heading);
+    font-weight: var(--tj-fw-bold);
+    line-height: 0.6;
+    color: var(--tj-white);
+    line-height: 1.5em;
+    /* white-space: nowrap; */
+}
+#contact
+{
+    margin-top: 20vh;
+    width: 95vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10vh;
+}
+.contactcontainer{
+    width:57vw;
+    margin:auto;
+display:flex;
+background: var(--tj-theme-accent-2);
+border: 1px solid var(--tj-theme-secondary);
+box-sizing: border-box;
+flex-direction: column;
+row-gap: 5vh;
+border-radius: 15px;
+    padding: 30px;
+}
+.contactcontainer a
+{
+    text-decoration: underline;
+}
+.email
+{
+    display: flex;
+}
+.phone
+{
+    display: flex;
+}
+.adress
+{
+    display:flex;
+}
+.contactcontainer img{
+    position: relative;
+    top:-10px;
 }
