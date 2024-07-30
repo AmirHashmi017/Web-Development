@@ -358,3 +358,38 @@ h2 {
 .service:hover .firstservice {
     color: var(--tj-white);
 }
+.Skills {
+    width: 95vw;
+    height: 100vh;
+}
+.skillscontainer {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12vh;
+}
+.skill {
+    width: 12vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--tj-theme-accent-2);
+    border: 1px solid var(--tj-theme-secondary);
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 30px;
+}
+.skill:hover{
+    background: linear-gradient(to right, var(--tj-theme-primary) 0%, var(--tj-theme-secondary) 100%);
+}
+.skillsboxcontainer{
+    width:77vw;
+    margin:auto;
+display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+column-gap: 2vw;
+}
