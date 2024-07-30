@@ -86,7 +86,7 @@ nav ul li a {
     z-index: 1;
 }
 
-nav ul a {
+a {
     font-family: var(--tj-ff-body);
     color: var(--tj-white);
     text-decoration: none;
@@ -147,6 +147,18 @@ a:hover {
     border: 3px solid var(--tj-theme-primary);
 }
 
+.icons {
+    padding-top: 30px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    column-gap: 30px;
+}
+
+.icons.img:hover {
+    background-color: purple;
+}
+
 .image {
 
     /* filter:grayscale(100); */
@@ -157,6 +169,22 @@ a:hover {
     position: relative;
     top: -60px;
     display: block;
+}
+
+.buttoncontact {
+    width: 6vw;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    /* gap: 10px; */
+    background: var(--tj-theme-primary);
+    color: var(--tj-white);
+    font-size: var(--tj-fz-btn);
+    font-weight: var(--tj-fw-sbold);
+    border-radius: 50px;
+    padding: 17px 30px;
+    line-height: 1;
+    text-decoration: none;
 }
 
 .profiletextheading {
