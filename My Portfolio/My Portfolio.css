@@ -115,6 +115,7 @@ a:hover {
     border-radius: 50px;
     padding: 17px 30px;
     line-height: 1;
+    white-space: nowrap;
     text-decoration: none;
 }
 
@@ -172,7 +173,7 @@ a:hover {
 }
 
 .buttoncontact {
-    width: 4vw;
+    width: fit-content;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -185,6 +186,7 @@ a:hover {
     padding: 17px 30px;
     line-height: 1;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .profiletextheading {
@@ -582,13 +584,15 @@ h2 {
         width: 95vw;
         /* height: 100vh; */
     }
+
     nav {
-display: none;
-    } 
+        display: none;
+    }
+
     .profile {
         position: relative;
         top: 35px;
-        width:85vw;
+        width: 85vw;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -601,18 +605,18 @@ display: none;
         border-radius: 15px;
         padding-top: 20px;
     }
-    
+
     .profileimagebox img {
-        width:auto;
+        width: auto;
         height: 30vh;
         border: 2px solid var(--tj-theme-primary);
         border-radius: 15px;
     }
-    
+
     .profileimagebox img:hover {
         border: 3px solid var(--tj-theme-primary);
     }
-    
+
     .icons {
         padding-top: 30px;
         display: flex;
@@ -620,25 +624,25 @@ display: none;
         align-items: center;
         column-gap: 15px;
     }
-    
+
     .icons.img:hover {
         background-color: purple;
     }
-    
+
     .image {
-    
+
         /* filter:grayscale(100); */
-    
+
     }
-    
+
     .profiletextbox {
         position: relative;
         top: -60px;
         display: block;
     }
-    
+
     .buttoncontact {
-        width:fit-content;
+        width: fit-content;
         display: flex;
         align-items: center;
         text-decoration: none;
@@ -652,7 +656,7 @@ display: none;
         line-height: 1;
         text-decoration: none;
     }
-    
+
     .profiletextheading {
         font-family: var(--tj-ff-heading);
         font-size: 30px;
@@ -661,8 +665,8 @@ display: none;
         -webkit-text-fill-color: transparent;
         text-align: center;
     }
-    
-    
+
+
     .profiletext {
         font-family: var(--tj-ff-body);
         font-size: 15px;
@@ -674,11 +678,12 @@ display: none;
         -webkit-tap-highlight-color: transparent;
         color: var(--tj-body);
     }
+
     .About {
         width: 95vw;
         height: 180vh;
     }
-    
+
     .container {
         width: 80vw;
         margin: auto;
@@ -687,39 +692,39 @@ display: none;
         /* column-gap: 40px; */
         justify-items: center;
     }
-    .n1 
-    {
+
+    .n1 {
         order: 1;
     }
-    .n2
-    {
+
+    .n2 {
         order: 2;
     }
-    .n3
-    {
+
+    .n3 {
         order: 3;
     }
-    .n4
-    {
-        order:4
+
+    .n4 {
+        order: 4
     }
-    .n5 
-    {
+
+    .n5 {
         order: 5;
     }
-    .n6
-    {
+
+    .n6 {
         order: 6;
     }
-    .n7
-    {
+
+    .n7 {
         order: 7;
     }
-    .n8
-    {
-        order:8
+
+    .n8 {
+        order: 8
     }
-    
+
     h2 {
         /* margin-left: 200px; */
         font-size: 30px;
@@ -732,7 +737,7 @@ display: none;
         -webkit-text-fill-color: transparent;
         text-align: center;
     }
-    
+
     .aboutdata {
         width: 66vw;
         position: relative;
@@ -745,8 +750,8 @@ display: none;
         transition: background 0.6s ease, color 0.6s ease;
         /* Apply transition to background and color */
     }
-    
-    
+
+
     .first {
         transition: color 0.6s ease;
         color: var(--tj-theme-primary);
@@ -756,7 +761,7 @@ display: none;
         font-family: var(--tj-ff-heading);
         line-height: 0.6;
     }
-    
+
     .second {
         font-size: 20px;
         text-transform: uppercase;
@@ -766,7 +771,7 @@ display: none;
         line-height: 1.2;
         color: var(--tj-white);
     }
-    
+
     .third {
         font-size: 15px;
         color: var(--tj-body);
@@ -774,11 +779,12 @@ display: none;
         line-height: 0.6;
         margin-bottom: 8px;
     }
+
     .Services {
         width: 95vw;
         height: 100vh;
     }
-    
+
     .servicecontainer {
         width: 80vw;
         margin: auto;
@@ -786,13 +792,13 @@ display: none;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .service {
         display: flex;
         flex-direction: column;
         width: 75vw;
         position: relative;
-        padding:20px 20px;
+        padding: 20px 20px;
         margin-bottom: 30px;
         /* background-color: white; */
         border-bottom: 1px solid var(--tj-theme-primary);
@@ -805,14 +811,14 @@ display: none;
         align-items: center;
         column-gap: 20px;
     }
-    
+
     .firstservice {
         font-size: 15px;
         position: relative;
-        top: 11px;
+        top: 9px;
         transition: color 0.6s ease;
     }
-    
+
     .secondservice {
         font-size: 20px;
         /* text-transform: uppercase; */
@@ -824,26 +830,225 @@ display: none;
         line-height: 1.0em;
         white-space: nowrap;
     }
-    
+
     .thirdservice {
         position: relative;
         top: 0px;
         line-height: 1.3em;
     }
-    
+
     .portion1 {
         width: 65vw;
         display: flex;
         column-gap: 10px;
         position: relative;
-        left:-20px;
+        left: -20px;
     }
-    
+
     .service:hover {
         background: linear-gradient(to right, var(--tj-theme-primary) 0%, var(--tj-theme-secondary) 100%);
     }
-    
+
     .service:hover .firstservice {
         color: var(--tj-white);
     }
+
+    .Skills {
+        margin-top: 10vh;
+        width: 95vw;
+        /* height: 100vh; */
+    }
+
+    .skillscontainer {
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 8vh;
+    }
+
+    .skill {
+        width: 37vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: var(--tj-theme-accent-2);
+        border: 1px solid var(--tj-theme-secondary);
+        box-sizing: border-box;
+        border-radius: 15px;
+        padding: 30px;
+    }
+
+    .skillsboxcontainer {
+        width: 77vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10vw;
+        column-gap: 7vw;
+    }
+
+    .Projects {
+        margin-top: 20vh;
+        width: 95vw;
+        height: 330vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10vh;
+    }
+
+    .projectcontainer {
+        width: 77vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 2vw;
+        row-gap: 10vh;
+    }
+
+    .project {
+        width: 80vw;
+        height: 70vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        background: var(--tj-theme-accent-2);
+        border: 1px solid var(--tj-theme-secondary);
+        box-sizing: border-box;
+        border-radius: 15px;
+        padding: 30px;
+    }
+
+    .project:hover {
+        border: 2px solid var(--tj-theme-primary)
+    }
+
+    .project img {
+        /* border:3px solid var(--tj-theme-primary); */
+        border-radius: 7px;
+        width: 245px;
+        height: 200px;
+    }
+
+    .secondproject {
+
+        font-size: 20px;
+        /* text-transform: uppercase; */
+        margin-bottom: 8px;
+        font-family: var(--tj-ff-heading);
+        font-weight: var(--tj-fw-bold);
+        line-height: 0.6;
+        color: var(--tj-white);
+        line-height: 1.3em;
+        /* white-space: nowrap; */
+    }
+
+    .firstproject {
+        line-height: 1em;
+    }
+
+    .thirdproject {
+        line-height: 1.2em;
+    }
+
+    .Certifications {
+        margin-top: 20vh;
+        width: 95vw;
+        height: 180vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10vh;
+    }
+
+    .certificationcontainer {
+        width: 77vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 2vw;
+        row-gap: 10vh;
+    }
+
+    .certificate {
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: var(--tj-theme-accent-2);
+        border: 1px solid var(--tj-theme-secondary);
+        box-sizing: border-box;
+        border-radius: 15px;
+        padding: 30px;
+    }
+
+    .certificate:hover {
+        border: 2px solid var(--tj-theme-primary)
+    }
+
+    .certificate img {
+        border: 3px solid var(--tj-theme-primary);
+        border-radius: 10px;
+        width: 245px;
+        height: 200px;
+    }
+
+    .secondcertificate {
+
+        font-size: 20px;
+        /* text-transform: uppercase; */
+        margin-bottom: 8px;
+        font-family: var(--tj-ff-heading);
+        font-weight: var(--tj-fw-bold);
+        line-height: 0.6;
+        color: var(--tj-white);
+        line-height: 1.5em;
+        /* white-space: nowrap; */
+    }
+
+    #contact {
+        margin-top: 4vh;
+        width: 95vw;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 3vh;
+    }
+
+    .contactcontainer {
+        width: 87vw;
+        margin: auto;
+        display: flex;
+        background: var(--tj-theme-accent-2);
+        border: 1px solid var(--tj-theme-secondary);
+        box-sizing: border-box;
+        flex-direction: column;
+        row-gap: 5vh;
+        margin-bottom: 5vh;
+        border-radius: 15px;
+        padding: 30px;
+    }
+
+    .contactcontainer:hover {
+        border: 2px solid var(--tj-theme-primary)
+    }
+
+    .contactcontainer a {
+        font-size: 13px;
+        text-decoration: underline;
+    }
+
+    .secondcertificate {
+        font-size: 15px;
+    }
+
 }
