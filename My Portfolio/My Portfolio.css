@@ -172,7 +172,7 @@ a:hover {
 }
 
 .buttoncontact {
-    width: 6vw;
+    width: 4vw;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -576,3 +576,5 @@ h2 {
 .thirdproject {
     line-height: 1.2em;
 }
+
+@media screen and (max-width: 1300px) {}
