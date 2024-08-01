@@ -1,8 +1,19 @@
+.button
+{
+    cursor: pointer;
+}
 .container
 {
+    position: absolute;
+    left: 0px;
     background-color:aquamarine;
     width: 30vw;
     height: 80vh;
+    transform: translateX(-200px);
+    transition: transform 2s normal;
+}
+.button:hover .container{
+    transform: translateX(0px);
 }
 
 .box
