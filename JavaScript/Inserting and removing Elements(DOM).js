@@ -1,0 +1,30 @@
+console.log(document.querySelector(".container").innerText);
+console.log(document.querySelector(".container").innerHTML);
+console.log(document.querySelector(".container").outerHTML);
+console.log(document.querySelector(".container").tagName);
+console.log(document.querySelector(".container").nodeName);
+console.log(document.querySelector(".container").textContent);
+document.getElementById("hiddenelement").hidden=true;
+document.querySelector(".box").innerHTML="I am Amir";
+console.log(document.querySelector(".box").hasAttribute("style"));
+console.log(document.querySelector(".box").getAttribute("style"));
+document.querySelector(".box").setAttribute("style","border:5px solid green");
+document.querySelector("#special").removeAttribute("style");
+console.log(document.querySelector("#special").dataset);
+let box5=document.createElement("div");
+box5.innerHTML="Box5";
+box5.setAttribute("class","box");
+// document.querySelector(".box").replaceWith(box5);
+// document.querySelector(".box").before(box5);
+// document.querySelector(".box").after(box5);
+// document.querySelector(".container").prepend(box5);
+document.querySelector(".container").append(box5);
+let cont=document.querySelector(".box");
+cont.insertAdjacentHTML("beforeend","<b>Hello</b>")
+document.querySelector("#new").remove()
+console.log(document.querySelector(".box").classList);
+console.log(document.querySelector(".box").className);
+document.querySelector(".box").classList.add("Amir");
+console.log(document.querySelector(".box").className);
+// document.querySelector(".box").classList.remove("box");
+document.querySelector(".box").classList.toggle("yellow");
