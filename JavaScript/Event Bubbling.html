@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Bubbling</title>
+    <style>
+        .child
+        {
+            background-color: aqua;
+            cursor: pointer;
+            border:2px solid green;
+            padding:14px;
+            margin:14px;
+        }
+        .childcontainer
+        {
+            padding:14px;
+            margin:14px;
+        display: block;
+            background-color: blue;
+        }
+        .container{
+            padding:14px;
+            margin:14px;
+            background-color: grey;
+        }
+        .Yellow
+        {
+            padding:14px;
+            margin:14px;
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <span class="childcontainer">
+            <div class="child">
+                I am a child.
+            </div>
+        </span>
+    </div>
     <script src="Event Bubbling.js"></script>
 </body>
 </html>
