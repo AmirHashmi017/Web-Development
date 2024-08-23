@@ -1,8 +1,8 @@
-// let obj={
-//     name:"amir",
-//     discipline:"BSCS"
-// }
-// console.log(obj);
+let obj={
+    name:"amir",
+    discipline:"BSCS"
+}
+console.log(obj);
 class Animal{
     constructor(name)
     {
