@@ -1,6 +1,7 @@
 // The Double Trouble: You are tasked with writing a function that doubles each element in an array. However, there's a catch: if the array contains consecutive duplicate elements, only double one of them.
-let arr=[1,3,3,5,7,7,7,7,9];
-let doublearr=[];
+function DoubleArray(arr)
+{
+    let doublearr=[];
 for(let i=0;i<arr.length;i++)
 {
     try{
@@ -16,4 +17,6 @@ catch{
     doublearr.push(arr[i]);
 }
 }
-console.log(doublearr);
+return doublearr;
+}
+console.log(DoubleArray([1,3,3,5,7,7,7,7,9]));
