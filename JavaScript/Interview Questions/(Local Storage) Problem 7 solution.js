@@ -60,8 +60,10 @@ document.querySelector(".Button").addEventListener("click",()=>
         let note=prompt("Enter your Note: ");
         SaveNotesToLocalStorage(note);
         let notes=GetNotes();
+        if(notes.length>0)
         DisplayNotes(notes);
     })
     let notes=GetNotes();
+    if(notes.length>0)
         DisplayNotes(notes);
 
