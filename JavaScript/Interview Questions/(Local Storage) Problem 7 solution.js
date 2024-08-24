@@ -18,17 +18,50 @@ let friends=
 localStorage.setItem("Guys",JSON.stringify(friends));
 console.log(localStorage.getItem("Guys"))
 console.log(JSON.parse(localStorage.getItem("Guys")));
-function SaveNoteToLocalStorage(note)
+// function SaveNoteToLocalStorage(note)
+// {
+//     localStorage.setItem("Note",note);
+// }
+// document.querySelector(".Button").addEventListener("click",()=>
+// {
+//     let note=prompt("Enter your Note: ");
+//     SaveNoteToLocalStorage(note);
+//     document.querySelector(".notes").innerHTML=localStorage.getItem("Note");
+// })
+// if(localStorage.getItem("Note"))
+// {
+//     document.querySelector(".notes").innerHTML=localStorage.getItem("Note");
+// }
+// Function to save notes array to localStorage
+function SaveNotesToLocalStorage(note)
 {
-    localStorage.setItem("Note",note);
+    let Notes=GetNotes();
+    Notes.push(note);
+    localStorage.setItem("Notes",JSON.stringify(Notes));
+}
+function GetNotes(){
+    let allnotes=localStorage.getItem("Notes");
+    if(allnotes)
+    {
+        return JSON.parse(allnotes);
+    }
+    else{
+        return [];
+    }
+}
+function DisplayNotes(notes)
+{
+    document.querySelector(".notes").innerHTML=notes.map(text=>
+`<div>${text}<div>`
+    ).join("");
 }
 document.querySelector(".Button").addEventListener("click",()=>
-{
-    let note=prompt("Enter your Note: ");
-    SaveNoteToLocalStorage(note);
-    document.querySelector(".notes").innerHTML=localStorage.getItem("Note");
-})
-if(localStorage.getItem("Note"))
-{
-    document.querySelector(".notes").innerHTML=localStorage.getItem("Note");
-}
+    {
+        let note=prompt("Enter your Note: ");
+        SaveNotesToLocalStorage(note);
+        let notes=GetNotes();
+        DisplayNotes(notes);
+    })
+    let notes=GetNotes();
+        DisplayNotes(notes);
+
