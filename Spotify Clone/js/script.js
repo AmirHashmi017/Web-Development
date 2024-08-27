@@ -1,7 +1,7 @@
 let currentsong=new Audio();
 async function getSongs()
 {
-let a=await fetch ("http://127.0.0.1:3002/Spotify%20Clone/songs/");
+let a=await fetch ("http://127.0.0.1:3000/Spotify%20Clone/songs/");
 let response= await a.text();
 let div=document.createElement("div");
 div.innerHTML=response;
@@ -30,16 +30,15 @@ function secondsToMinutesSeconds(seconds) {
 }
 currentsong.addEventListener("timeupdate",()=>
 {
-    console.log(currentsong.currentTime,currentsong.duration);
     document.querySelector(".songtime").innerHTML=`${secondsToMinutesSeconds(currentsong.currentTime)}/${secondsToMinutesSeconds(currentsong.duration)}`;
 })
-const playMusic=(track,pause = true)=>
+const playMusic=(track,pause = false)=>
 {
     if(!pause)
     {
         document.querySelector("#play").src="img/pause.svg";
     }
-    let musicsrc = `http://127.0.0.1:3002/Spotify%20Clone/songs/${track}`;
+    let musicsrc = `http://127.0.0.1:3000/Spotify%20Clone/songs/${track}`;
     currentsong.src=musicsrc;
     currentsong.play();
     document.querySelector(".songinfo").innerHTML=decodeURI(track);
@@ -48,7 +47,7 @@ const playMusic=(track,pause = true)=>
 async function main()
 {
 let songs=await getSongs();
-playMusic(songs[0]);
+
 let songul=document.querySelector(".songList").getElementsByTagName("ul")[0];
 for (const song of songs) {
     songul.innerHTML=songul.innerHTML+`
@@ -66,6 +65,7 @@ for (const song of songs) {
 </li>
     `
 }
+playMusic(songs[0]);
 Array.from(document.querySelector(".songList").getElementsByTagName("li")).forEach((e)=>
 {
     e.addEventListener("click",()=>
