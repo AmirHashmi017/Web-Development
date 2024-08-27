@@ -275,3 +275,14 @@ body {
     margin: 20px 0;
     width: 100%;
 }
+.songinfo {
+    color: black;
+    padding: 0 12px;
+    width: 250px;
+}
+
+.songtime {
+    width: 125px;
+    color: black;
+    padding: 0 12px;
+}
