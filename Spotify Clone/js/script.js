@@ -31,9 +31,17 @@ function secondsToMinutesSeconds(seconds) {
 currentsong.addEventListener("timeupdate",()=>
 {
     document.querySelector(".songtime").innerHTML=`${secondsToMinutesSeconds(currentsong.currentTime)}/${secondsToMinutesSeconds(currentsong.duration)}`;
+    document.querySelector(".circle").style.left=(currentsong.currentTime/currentsong.duration)*100;
+})
+document.querySelector(".seekbar").addEventListener("click",e=>
+{
+    let percent=(e.offsetX/e.target.getBoundingClientRect().width)*100;
+document.querySelector(".circle").style.left=percent + "%";
+currentsong.currentTime=(currentsong.duration*percent)/100;
 })
 const playMusic=(track,pause = false)=>
 {
+    document.querySelector(".circle").style.left="0%";
     if(!pause)
     {
         document.querySelector("#play").src="img/pause.svg";
@@ -65,7 +73,7 @@ for (const song of songs) {
 </li>
     `
 }
-playMusic(songs[0]);
+// playMusic(songs[0]);
 Array.from(document.querySelector(".songList").getElementsByTagName("li")).forEach((e)=>
 {
     e.addEventListener("click",()=>
@@ -87,4 +95,12 @@ document.querySelector("#play").addEventListener("click",()=>
     }
 })
 }
+document.querySelector(".hamburger").addEventListener("click", () => {
+    document.querySelector(".left").style.left = "0"
+})
+
+// Add an event listener for close button
+document.querySelector(".close").addEventListener("click", () => {
+    document.querySelector(".left").style.left = "-120%"
+})
 main();
