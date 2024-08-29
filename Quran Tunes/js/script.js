@@ -2,7 +2,7 @@ let currentsong = new Audio();
 let songs;
 let currfolder;
 async function getSongs(folder) {
-    currfolder=folder;
+    currfolder = folder;
     let a = await fetch(`http://127.0.0.1:3000/Quran%20Tunes/${currfolder}/`);
     let response = await a.text();
     let div = document.createElement("div");
@@ -15,7 +15,7 @@ async function getSongs(folder) {
         }
     }
     let songul = document.querySelector(".songList").getElementsByTagName("ul")[0];
-    songul.innerHTML="";
+    songul.innerHTML = "";
     for (const song of songs) {
         songul.innerHTML = songul.innerHTML + `
     <li>
@@ -87,20 +87,43 @@ async function main() {
         }
     })
 }
-async function displayAlbums()
-{
+async function displayAlbums() {
     let a = await fetch("http://127.0.0.1:3000/Quran%20Tunes/songs/");
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
-    let anchors=div.getElementsByTagName("a");
-    Array.from(anchors).forEach((e)=>
-    {
-        if(e.href.includes("/songs"))
-        {
-            console.log(e.href.split("/").slice(-1)[0]);
+    let anchors = div.getElementsByTagName("a");
+    let array = Array.from(anchors);
+    for (let i = 0; i < array.length; i++) {
+        let e = array[i];
+        if (e.href.includes("/songs") && !e.href.includes("htaccess")) {
+            let folder = e.href.split("/").slice(-2)[0];
+            let a = await fetch(`http://127.0.0.1:3000/Quran%20Tunes/songs/${folder}/info.json`);
+            let response = await a.json();
+
+            document.querySelector(".cardContainer").innerHTML = document.querySelector(".cardContainer").innerHTML + ` <div data-folder="${folder}" class="card">
+            <div class="play">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+
+            <img src="songs/${folder}/cover.png" alt="">
+            <h2>${response.title}</h2>
+            <p>${response.description}</p>
+        </div>`
         }
-    })
+    }
+    Array.from(document.getElementsByClassName("card")).forEach(e => {
+        e.addEventListener("click", async items => {
+            songs = await getSongs(`songs/${items.currentTarget.dataset.folder}`);
+            playMusic(songs[0]);
+        }
+        )
+    }
+    )
 }
 document.querySelector(".hamburger").addEventListener("click", () => {
     document.querySelector(".left").style.left = "0"
@@ -125,14 +148,17 @@ document.querySelector("#next").addEventListener("click", e => {
 document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", e => {
     currentsong.volume = parseInt(e.target.value) / 100;
 })
-Array.from(document.getElementsByClassName("card")).forEach(e=>
-{
-    e.addEventListener("click",async items=>
-        {
-            songs=await getSongs(`songs/${items.currentTarget.dataset.folder}`);
-            playMusic(songs[0]);
-        }
-        )
-}
-)
+document.querySelector(".volume>img").addEventListener("click", e=>{ 
+    if(e.target.src.includes("volume.svg")){
+        e.target.src = e.target.src.replace("volume.svg", "mute.svg")
+        currentsong.volume = 0;
+        document.querySelector(".range").getElementsByTagName("input")[0].value = 0;
+    }
+    else{
+        e.target.src = e.target.src.replace("mute.svg", "volume.svg")
+        currentsong.volume = .50;
+        document.querySelector(".range").getElementsByTagName("input")[0].value = 50;
+    }
+
+})
 main();
