@@ -88,7 +88,7 @@ async function main() {
     })
 }
 async function displayAlbums() {
-    let a = await fetch("http://127.0.0.1:3000/Quran%20Tunes/songs/");
+    let a = await fetch("http://127.0.0.1:3000/Quran%20Tunes/Tilawats/");
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -96,9 +96,9 @@ async function displayAlbums() {
     let array = Array.from(anchors);
     for (let i = 0; i < array.length; i++) {
         let e = array[i];
-        if (e.href.includes("/songs") && !e.href.includes("htaccess")) {
+        if (e.href.includes("/Tilawats") && !e.href.includes("htaccess")) {
             let folder = e.href.split("/").slice(-2)[0];
-            let a = await fetch(`http://127.0.0.1:3000/Quran%20Tunes/songs/${folder}/info.json`);
+            let a = await fetch(`http://127.0.0.1:3000/Quran%20Tunes/Tilawats/${folder}/info.json`);
             let response = await a.json();
 
             document.querySelector(".cardContainer").innerHTML = document.querySelector(".cardContainer").innerHTML + ` <div data-folder="${folder}" class="card">
@@ -110,7 +110,7 @@ async function displayAlbums() {
                 </svg>
             </div>
 
-            <img src="songs/${folder}/cover.png" alt="">
+            <img src="Tilawats/${folder}/cover.png" alt="">
             <h2>${response.title}</h2>
             <p>${response.description}</p>
         </div>`
@@ -118,7 +118,7 @@ async function displayAlbums() {
     }
     Array.from(document.getElementsByClassName("card")).forEach(e => {
         e.addEventListener("click", async items => {
-            songs = await getSongs(`songs/${items.currentTarget.dataset.folder}`);
+            songs = await getSongs(`Tilawats/${items.currentTarget.dataset.folder}`);
             playMusic(songs[0]);
         }
         )
