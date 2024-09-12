@@ -140,8 +140,12 @@ a:hover {
 }
 
 .profileimagebox img {
+    width: 350px;
+    height: 350px;
     border: 2px solid var(--tj-theme-primary);
     border-radius: 15px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .profileimagebox img:hover {
@@ -518,7 +522,7 @@ h2 {
 .Projects {
     margin-top: 20vh;
     width: 95vw;
-    height: 180vh;
+    height: 250vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -608,7 +612,10 @@ h2 {
 
     .profileimagebox img {
         width: auto;
-        height: 30vh;
+        height: 350px;
+        width: 350px;
+        object-fit: cover;
+        object-position: top;
         border: 2px solid var(--tj-theme-primary);
         border-radius: 15px;
     }
