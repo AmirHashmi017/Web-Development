@@ -612,8 +612,8 @@ h2 {
 
     .profileimagebox img {
         width: auto;
-        height: 350px;
-        width: 350px;
+        height: 250px;
+        width: 250px;
         object-fit: cover;
         object-position: top;
         border: 2px solid var(--tj-theme-primary);
