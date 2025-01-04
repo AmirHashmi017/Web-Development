@@ -212,7 +212,7 @@ p {
 
 .profiletext {
     font-family: var(--tj-ff-body);
-    font-size: 20px;
+    font-size: 25px !important;
     font-weight: 300;
     line-height: var(--bs-body-line-height);
     text-align: var(--bs-body-text-align);
@@ -220,6 +220,7 @@ p {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
     color: var(--tj-body);
+    min-height: calc(2 * var(--bs-body-line-height)) !important;
     animation: blink 0.7s step-end infinite;
 }
 
@@ -606,19 +607,19 @@ h2 {
 @media screen and (max-width: 800px) {
     .profiletext {
         font-family: var(--tj-ff-body);
-        font-size: 25px;
-        font-weight: 300;
+        font-size: 20px !important;
+        font-weight: 600 !important;
         line-height: var(--bs-body-line-height);
         text-align: var(--bs-body-text-align);
         background-color: var(--bs-body-bg);
         -webkit-text-size-adjust: 100%;
         -webkit-tap-highlight-color: transparent;
-        /* color: var(--tj-body); */
-        color:blue;
+        color: var(--tj-body);
         animation: blink 0.7s step-end infinite;
+        height: 5vh;
     }
     .home {
-        width: 97vw;
+        width: 99vw !important;
         height: 96vh;
     }
 
@@ -635,7 +636,7 @@ h2 {
     .profile {
         position: relative;
         top: 35px;
-        width: 85vw;
+        width: 93vw;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -720,6 +721,7 @@ h2 {
         font-weight: 300;
         line-height: var(--bs-body-line-height);
         background-color: var(--bs-body-bg);
+        min-height: calc(2 * var(--bs-body-line-height)) !important; 
         -webkit-text-size-adjust: 100%;
         -webkit-tap-highlight-color: transparent;
         color: var(--tj-body);
@@ -727,7 +729,7 @@ h2 {
 
     .About {
         width: 95vw;
-        height: 190vh;
+        height: 197vh;
     }
     .aboutdata {
         
