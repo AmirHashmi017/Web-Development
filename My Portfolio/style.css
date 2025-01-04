@@ -140,8 +140,8 @@ a:hover {
 }
 
 .profileimagebox img {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border: 2px solid var(--tj-theme-primary);
     border-radius: 15px;
     object-fit: cover;
@@ -172,7 +172,7 @@ a:hover {
 
 .profiletextbox {
     position: relative;
-    top: -60px;
+    top: -30px;
     display: block;
 }
 
@@ -195,7 +195,7 @@ a:hover {
 
 .profiletextheading {
     font-family: var(--tj-ff-heading);
-    font-size: 65px;
+    font-size: 55px;
     background: linear-gradient(to right, var(--tj-theme-primary) 0%, var(--tj-white) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -220,11 +220,18 @@ p {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
     color: var(--tj-body);
+    animation: blink 0.7s step-end infinite;
 }
+
+@keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
 
 .About {
     width: 95vw;
-    height: 100vh;
+    height: 130vh;
 }
 
 .container {
@@ -255,7 +262,7 @@ h2 {
     border-radius: 20px;
     background: var(--tj-theme-accent-2);
     z-index: 10;
-    height: 15vh;
+    height: 24vh;
     transition: background 0.6s ease, color 0.6s ease;
     /* Apply transition to background and color */
 }
@@ -284,7 +291,7 @@ h2 {
     margin-bottom: 8px;
     font-family: var(--tj-ff-heading);
     font-weight: var(--tj-fw-bold);
-    line-height: 0.6;
+    line-height: 1.1;
     color: var(--tj-white);
 }
 
@@ -428,7 +435,7 @@ h2 {
 }
 
 .certificate {
-    width: 32vw;
+    width: 34vw;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -522,7 +529,7 @@ h2 {
 .Projects {
     margin-top: 20vh;
     width: 95vw;
-    height: 250vh;
+    height: 400vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -536,11 +543,12 @@ h2 {
     grid-template-columns: 1fr 1fr;
     column-gap: 2vw;
     row-gap: 10vh;
+    
 }
 
 .project {
     width: 32vw;
-    height: 70vh;
+    height: 85vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -582,16 +590,34 @@ h2 {
 .thirdproject {
     line-height: 1.2em;
 }
-
-@media screen and (max-width: 1300px) {
+#typewriter {
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    width: fit-content;
+    animation: blink 0.7s step-end infinite;
+  }
+#HandWaving
+{
+    position: absolute;
+    top:14px;
+    left:-68px;
+}
+@media screen and (max-width: 800px) {
     .home {
         width: 95vw;
-        /* height: 100vh; */
+        height: 96vh;
     }
 
     nav {
         display: none;
     }
+    #HandWaving
+{
+    position: absolute;
+    top:-16px;
+    left:-48px;
+}
 
     .profile {
         position: relative;
@@ -688,9 +714,14 @@ h2 {
 
     .About {
         width: 95vw;
-        height: 180vh;
+        height: 190vh;
     }
-
+    .aboutdata {
+        
+        height: 19vh!important;
+        transition: background 0.6s ease, color 0.6s ease;
+        /* Apply transition to background and color */
+    }
     .container {
         width: 80vw;
         margin: auto;
@@ -899,9 +930,9 @@ h2 {
     }
 
     .Projects {
-        margin-top: 20vh;
+        margin-top: 10vh;
         width: 95vw;
-        height: 490vh;
+        height: 635vh;
         display: flex;
         flex-direction: column;
         align-items: center;

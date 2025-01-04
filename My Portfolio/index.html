@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="My Portfolio.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <div class="home">
         <nav>
             <ul>
@@ -28,12 +29,13 @@
                 <img src="Assets/My pic 3.jpeg" class="image" />
             </div>
             <div class="profiletextbox">
-                <h1 class="profiletextheading">Hi, I am Amir. Web +<br>Desktop App Developer.</h1>
-                <p class="profiletext">I'm a passionate CS student at UET Lahore who loves coding, diving into brilliant
-
-                    projects and continuously learning new technologies.</p>
+                
+                <img id="HandWaving" src="Assets/HandWaving.gif" width="70" height="100" alt="Hand waving hi" class="hand-wave">
+                <h1 id="profiletextheading" class="profiletextheading">
+                   Hi, I am Amir. Web +<br>Desktop App Developer.</h1>
+                <p class="profiletext"></p>
                 <div class="icons">
-                    <a href="https://drive.google.com/file/d/1prOyw7XBs3FxzhgkW00OU0vqY-sV6qwd/view?usp=drive_link"
+                    <a href="https://drive.google.com/file/d/1IR0NSbaoZsp-tzd5iG4nc7eHsfTVPTCW/view?usp=sharing"
                         target="_blank">
                         <div class="buttoncontact">Resume</div>
                     </a>
@@ -94,6 +96,15 @@
             <div class="service">
                 <div class="portion1">
                     <p class="first firstservice"> 01</p>
+                    <p class="secondservice">E-commerce Development</p>
+                </div>
+                <div class="portion2">
+                    <p class="third thirdservice">Designing scalable, user-friendly e-commerce stores to boost business growth.</p>
+                </div>
+            </div>
+            <div class="service">
+                <div class="portion1">
+                    <p class="first firstservice"> 02</p>
                     <p class="secondservice">Web Development</p>
                 </div>
                 <div class="portion2">
@@ -103,7 +114,7 @@
             </div>
             <div class="service">
                 <div class="portion1">
-                    <p class="first firstservice"> 02</p>
+                    <p class="first firstservice"> 03</p>
                     <p class="secondservice">Desktop App Development</p>
                 </div>
                 <div class="portion2">
@@ -113,7 +124,7 @@
             </div>
             <div class="service">
                 <div class="portion1">
-                    <p class="first firstservice"> 03</p>
+                    <p class="first firstservice"> 04</p>
                     <p class="secondservice">ODOO Development</p>
                 </div>
                 <div class="portion2">
@@ -161,7 +172,27 @@
             </div>
             <div class="projectcontainer">
                 <div class="project">
-                    <img width=430 height=250 src="Assets/SkyLines(Net).JPG" />
+                    <img width=350 height=300 src="Assets/TheKidsStore.PNG" />
+                    <p class="first firstproject">E-commerce Store</p>
+                    <p class="secondproject">TheKidsStore</p>
+                    <p class="third thirdproject">TheKidsStore is my own running E-commerce store with Payment gateway integration.</p>
+                    <a href="https://thestore.kids/"
+                        target="_blank">
+                        <div class="buttoncontact">Visit Store</div>
+                    </a>
+                </div>
+                <div class="project">
+                    <img width=350 height=300 src="Assets/Map Implementation.PNG" />
+                    <p class="first firstproject">Mobile and Web App</p>
+                    <p class="secondproject">Campus Navigator</p>
+                    <p class="third thirdproject">Website for Campus Navigation and mobile tracking within UET Lahore using MERN Stack.</p>
+                    <a href="https://github.com/AmirHashmi017/DSA-Final-Project"
+                        target="_blank">
+                        <div class="buttoncontact">Github Code</div>
+                    </a>
+                </div>
+                <div class="project">
+                    <img width=350 height=300 src="Assets/SkyLines(Net).JPG" />
                     <div class="projecttext">
                         <p class=" first firstproject">Website</p>
                         <p class="secondproject">Skylines Web</p>
@@ -174,7 +205,7 @@
                     </div>
                 </div>
                 <div class="project">
-                    <img width=430 height=250 src="Assets/QuranTunes.JPG" />
+                    <img width=350 height=300 src="Assets/QuranTunes.JPG" />
                     <div class="projecttext">
                         <p class=" first firstproject">Website</p>
                         <p class="secondproject">Quran Tunes</p>
@@ -187,7 +218,7 @@
                     </div>
                 </div>
                 <div class="project">
-                    <img width=430 height=250 src="Assets/SkyLines App.JPG" />
+                    <img width=350 height=230 src="Assets/SkyLines App.JPG" />
                     <div class="projecttext">
                         <p class=" first firstproject">Desktop App</p>
                         <p class="secondproject">Skylines</p>
@@ -201,7 +232,7 @@
                 </div>
                 
                 <div class="project">
-                    <img width=430 height=250 src="Assets/Tanks BattleGround.JPG" />
+                    <img width=350 height=300 src="Assets/Tanks BattleGround.JPG" />
                     <p class="first firstproject">Desktop Game</p>
                     <p class="secondproject">Tanks BattleGround</p>
                     <p class="third thirdproject">A Tank Battle game developed using C#, OOP and Windows Form. </p>
@@ -211,7 +242,7 @@
                     </a>
                 </div>
                 <div class="project">
-                    <img width=430 height=250 src="Assets/Skylines web.JPG" />
+                    <img width=350 height=300 src="Assets/Skylines web.JPG" />
                     <p class="first firstproject">Website</p>
                     <p class="secondproject">Skylines Travels and Tours</p>
                     <p class="third thirdproject">Travels and Tours Website developed using PHP, Javascript, HTML and
@@ -221,7 +252,7 @@
                     </a>
                 </div>
                 <div class="project">
-                    <img width=430 height=250 src="Assets/Netflix Clone.JPG" />
+                    <img width=350 height=300 src="Assets/Netflix Clone.JPG" />
                     <p class="first firstproject">Website</p>
                     <p class="secondproject">Netflix Clone</p>
                     <p class="third thirdproject">Netflix Clone developed using HTML and CSS.</p>
@@ -253,7 +284,7 @@
                 </div>
                 <div class="certificate">
                     <img width=400 height=250 src="Assets/Ustadam Certificate.jpeg" />
-                    <p class="secondcertificate">Web Development Intern Cetificate</p>
+                    <p class="secondcertificate">Web Development Cetificate</p>
                     <a href="https://www.linkedin.com/posts/amir-hashmi-565587290_excited-to-share-that-i-have-completed-my-activity-7237378642106830849-b4gY?utm_source=share&utm_medium=member_desktop"
                         target="_blank">
                         <div class="buttoncontact">Verify Now</div>
@@ -299,6 +330,44 @@
                     </div>
                 </div>
             </div>
+
+            <script>
+                const texts = ["Welcome, I'm Amir Hashmi - a passionate CS student at UET Lahore.","I am a web and Desktop App Developer.","I love coding, diving into brilliant projects and learning new technologies."];
+let index = 0; 
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+  const typewriterElement = document.querySelector(".profiletext");
+
+
+  const currentText = texts[index];
+
+  if (isDeleting) {
+    typewriterElement.textContent = currentText.substring(0, charIndex) + " "; 
+    charIndex--;
+  } else {
+    typewriterElement.textContent = currentText.substring(0, charIndex) + "|"; 
+    charIndex++; 
+  }
+
+  if (!isDeleting && charIndex === currentText.length) {
+    isDeleting = true; 
+    setTimeout(typeEffect, 500); 
+    return;
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false; 
+    index = (index + 1) % texts.length; 
+  }
+
+  const typingSpeed = isDeleting ? 30 : 150; 
+  setTimeout(typeEffect, typingSpeed);
+}
+
+typeEffect();
+
+        
+            </script>
 
 </body>
 
