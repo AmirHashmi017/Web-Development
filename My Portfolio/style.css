@@ -604,6 +604,18 @@ h2 {
     left:-68px;
 }
 @media screen and (max-width: 800px) {
+    .profiletext {
+        font-family: var(--tj-ff-body);
+        font-size: 25px;
+        font-weight: 300;
+        line-height: var(--bs-body-line-height);
+        text-align: var(--bs-body-text-align);
+        background-color: var(--bs-body-bg);
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+        color: var(--tj-body);
+        animation: blink 0.7s step-end infinite;
+    }
     .home {
         width: 95vw;
         height: 96vh;
