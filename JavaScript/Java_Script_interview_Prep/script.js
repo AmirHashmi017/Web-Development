@@ -121,3 +121,12 @@ sum=arrnew.reduce((acc,val)=>
     return acc+=val
 },0)
 console.log(sum)
+
+let timer_id=setTimeout(()=>{
+    console.log("TIme out Function")
+},10000)
+
+letcontinuous_interval=setInterval(()=>
+{
+    console.log("Interval Set")
+},2000)
